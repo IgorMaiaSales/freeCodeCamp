@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trispace', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    padding: 20px 0;
+}
+
+#description {
+    text-indent: 60px;
+    line-height: 1.5;
+}
+
+#survey-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+.form_group {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: none;
+}
+.form_group label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.input_area {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #000;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: inherit;
+}
+#dropdown {
+    padding: 5px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+.options_group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 20px;
+    border: none;
+}
+
+.options_group legend {
+    font-size: 18px;
+}
+.options_group label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.options_group input {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 5px;
+    display: inline-block;
+}
+#textarea {
+    height: 150px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #000;
+    resize: vertical;
+}

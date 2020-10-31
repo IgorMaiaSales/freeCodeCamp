@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container" >
+    <h1 id="title" >
+        Lorem Impsum
+    </h1>
+    <p id="description" >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <form id="survey-form" >
+        <div class="form_group" >
+            <label id="name-label" for="name" >Name:</label>
+            <input class="input_area" type="text" name="name" id="name" placeholder="Enter your name" required >
+        </div>
+        <div class="form_group" >
+            <label id="email-label" for="email" >Email:</label>
+            <input class="input_area" type="email" name="email" id="email" placeholder="youremail@exemple.com" required >
+        </div>
+        <div class="form_group" >
+            <label id="number-label" for="number" >Age:</label>
+            <input class="input_area" type="number" name="number" id="number" min="10" max="99" placeholder="Enter your age" required>
+        </div>
+        <div class="form_group" >
+            <label for="dropdown" >Select one:</label>
+            <select  name="dropdown" id="dropdown" required >
+                <option disabled selected value >Select an option</option>
+                <option value="one" >One</option>
+                <option value="two" >Two</option>
+                <option value="tree" >Tree</option>
+                <option value="four" >Four</option>
+                <option value="five" >Five</option>
+            </select>
+        </div>
+        <fieldset class="options_group" >
+            <legend>Chose one of these items:</legend>
+            <label for="one"><input type="radio" name="items" id="one" value="one" > One</label>
+            <label for="two"><input type="radio" name="items" id="two" value="two" > Two</label>
+            <label for="tree"><input type="radio" name="items" id="tree" value="tree" > Tree</label>
+            <label for="four"><input type="radio" name="items" id="four" value="four" > Four</label>
+        </fieldset>
+        <fieldset class="options_group" >
+            <legend>Chose one of these items:</legend>
+            <label for="one"><input type="checkbox" name="items" id="one" value="one" > One</label>
+            <label for="two"><input type="checkbox" name="items" id="two" value="two" > Two</label>
+            <label for="tree"><input type="checkbox" name="items" id="tree" value="tree" > Tree</label>
+            <label for="four"><input type="checkbox" name="items" id="four" value="four" > Four</label>
+        </fieldset>
+        <div class="form_group" >
+            <label for="textarea" >Enter aditional coments:</label>
+            <textarea class="input_area" type="textarea" id="textarea" name="textarea" ></textarea>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
