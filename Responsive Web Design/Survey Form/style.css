@@ -19,10 +19,13 @@ body {
 #description {
     text-indent: 60px;
     line-height: 1.5;
+    max-width: 800px;
 }
 
 #survey-form {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     max-width: 600px;
     padding: 20px;
     margin: 20px;
@@ -63,6 +66,7 @@ body {
 
 .options_group legend {
     font-size: 18px;
+    padding-top: 20px;
 }
 .options_group label {
     display: flex;
@@ -80,4 +84,15 @@ body {
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid #000;
     resize: vertical;
+}
+
+#submit {
+    align-self: center;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: inherit;
 }
