@@ -177,3 +177,47 @@ body {
     line-height: 1.5;
     margin: 16px 0 0;
 }
+
+#youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 500px;
+    padding: 60px 0;
+}
+.youtube_container {
+    grid-template-columns: 5fr 1fr 6fr;
+    grid-template-areas: 'text . video';
+    align-items: center;
+}
+.youtube_text {
+    grid-area: text;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.youtube_text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+.youtube_text h3 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 40px;
+}
+.youtube_text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+#video {
+    grid-area: video;
+    width: 100%;
+    height: 350px;
+}
