@@ -7,13 +7,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    color: #0A0A23;
 }
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 15px;
 
-    width: 1300px;
+    width: 90%;
+    max-width: 1300px;
 }
 
 #header {
@@ -28,6 +30,8 @@ body {
     width: 100%;
     height: 75px;
     background-color: #0A0A23;
+
+    z-index: 2;
 }
 .header_container {
     display: flex;
@@ -90,12 +94,12 @@ body {
 }
 .banner_title {
     margin: 0 0 16px;
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 700px;
 }
 .banner_description {
     margin: 0;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
 }
 #banner_img {
@@ -110,8 +114,6 @@ body {
     width: 100%;
     height: 530px;
     padding: 60px 0;
-
-    color: #0A0A23;
 }
 .features_container {
     grid-template-columns: 4fr repeat(2, 1fr 3fr);
@@ -186,8 +188,6 @@ body {
     width: 100%;
     height: 500px;
     padding: 60px 0;
-
-    color: #0A0A23;
 }
 .youtube_container {
     grid-template-columns: 5fr 1fr 6fr;
@@ -239,8 +239,6 @@ body {
     width: 100%;
     height: 540px;
     padding: 60px 0;
-
-    color: #0A0A23;
 }
 .join_us_container {
     grid-template-columns: 5fr 1fr 6fr;
@@ -274,7 +272,11 @@ body {
 #email:focus {
     outline: none;
 }
-#submit {
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 200px;
     height: 32px;
     background-color: #5A01A7;
@@ -287,7 +289,7 @@ body {
     align-self: center;
     cursor: pointer;
 }
-#submit:hover {
+.button:hover {
     animation-name: submit_hover;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -300,4 +302,57 @@ body {
 #join_us_img {
     grid-area: img;
     width: 100%;
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 650;
+    padding: 60px 0;
+}
+.pricing_container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.price_widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0;
+
+    border: 3px solid #5A01A7;
+    border-radius: 40px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.price_title,
+.price {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 16px 0;
+}
+.price_description {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 16px 24px;
+    text-align: center;
+}
+.price_img {
+    width: 40%;
+    height: auto;
+    filter: invert(15%) sepia(66%) saturate(6575%) hue-rotate(273deg) brightness(64%) contrast(118%);
+}
+.price {
+    margin: 24px 0 16px;
+}
+.price_widget .button {
+    margin: 0 0 16px;
+}
+.central_price_widget {
+    margin: 0 0 40px;
+    border: none;
+    background-color: #0A0A23;
+    color: #FFFFFF;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.8);
 }
