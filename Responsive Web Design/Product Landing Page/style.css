@@ -230,3 +230,74 @@ body {
     width: 100%;
     height: 350px;
 }
+
+#join_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 540px;
+    padding: 60px 0;
+
+    color: #0A0A23;
+}
+.join_us_container {
+    grid-template-columns: 5fr 1fr 6fr;
+    grid-template-areas: 'form . img';
+    align-items: center;
+}
+#form {
+    grid-area: form;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#form h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+#form h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+#email {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #5A01A7;
+    border-radius: 8px;
+    margin: 0 0 16px;
+}
+#email:focus {
+    outline: none;
+}
+#submit {
+    width: 200px;
+    height: 32px;
+    background-color: #5A01A7;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    align-self: center;
+    cursor: pointer;
+}
+#submit:hover {
+    animation-name: submit_hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes submit_hover {
+    100% {
+        transform: scale(1.1);
+    }
+}
+#join_us_img {
+    grid-area: img;
+    width: 100%;
+}
