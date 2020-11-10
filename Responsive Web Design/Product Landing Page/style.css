@@ -39,7 +39,6 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    width: 1300px;
     height: 100%;
 }
 #header-img {
@@ -364,7 +363,6 @@ body {
     align-items: center;
 
     width: 100%;
-    margin: 80px 0 0;
     background-color: #0A0A23;
     color: #FFFFFF;
 }
@@ -407,4 +405,84 @@ body {
 }
 .dev_container p {
     margin: 8px 0;
+}
+
+@media (max-width: 950px) {
+    
+    .banner_container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner_title {
+        font-size: 40px;
+    }
+    .banner_description {
+        font-size: 16px;
+    }
+    
+    .features_container {
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas:
+            'ftr1 ftr2'
+            'ftr3 ftr4'
+            'img img';
+        grid-row-gap: 64px;
+    }
+    #features_img {
+        max-width: 400px;
+        align-self: center;
+        justify-self: center;
+    }
+    .feature_widget {
+        max-width: 300px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .youtube_container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'text'
+            'video';
+        grid-gap: 80px;
+        align-items: center;
+        justify-items: center;
+    }
+    .youtube_text {
+        max-width: 600px;
+    }
+    #video {
+        max-width: 600px;
+    }
+
+    .join_us_container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'form'
+            'img';
+        max-width: 600px;
+        grid-row-gap: 80px;
+    }
+    #join_us_img {
+        max-width: 500px;
+        justify-self: center;
+    }
+    #join_us .button {
+        margin: 0;
+    }
+
+    .pricing_container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        grid-row-gap: 80px;
+    }
+    .price_widget {
+        margin: 0;
+    }
+
+    #features,
+    #youtube,
+    #join_us,
+    #pricing {
+        padding: 0 0 120px;
+    }
 }
