@@ -68,6 +68,15 @@ body {
     text-decoration: none;
     color: #FFFFFF;
 }
+.menu_mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+.mm_line {
+    height: 3px;
+    background-color: #FFFFFF;
+}
 
 #banner {
     display: flex;
@@ -320,10 +329,19 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 40px 0 0;
+    background-color: #FFFFFF;
 
     border: 3px solid #5A01A7;
     border-radius: 40px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.35);
+}
+.price_widget:hover {
+    animation: price_hover 500ms forwards;
+}
+@keyframes price_hover {
+    100% {
+        transform: scale(1.05);
+    }
 }
 .price_title,
 .price {
@@ -408,7 +426,12 @@ body {
 }
 
 @media (max-width: 950px) {
-    
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     .banner_container {
         grid-template-columns: 1fr 1fr;
     }
@@ -484,5 +507,12 @@ body {
     #join_us,
     #pricing {
         padding: 0 0 120px;
+    }
+}
+
+@media (min-width: 2000px) {
+    #banner {
+        background-image: none;
+        background-color: #0A0A23;
     }
 }
