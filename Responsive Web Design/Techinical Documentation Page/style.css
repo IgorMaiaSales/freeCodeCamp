@@ -27,7 +27,6 @@ body {
     top: 0;
     left: 0;
     width: 300px;
-    height: 100%;
     margin: 0;
 
     background-color: #EEEEEE;
@@ -38,6 +37,9 @@ body {
     align-items: center;
     padding: 16px;
     background-color: #563D7C;
+}
+.logo {
+    display: flex;
 }
 #logo {
     width: 60px;
@@ -52,7 +54,7 @@ body {
 #navbar ul {
     margin: 0;
     padding: 0;
-    height: calc(100vh - 92px);
+    height: calc(100vh - 108px);
     list-style: none;
     overflow-y: auto;
     overflow-x: hidden;
@@ -75,10 +77,13 @@ body {
     font-size: 16px;
     font-weight:600;
 }
+.hamberger {
+    display: none;
+    cursor: pointer;
+}
 
 #main-doc {
-    margin: 0;
-    margin-left: 300px;
+    margin: 0 0 0 300px;
     padding: 40px;
 
     display: flex;
@@ -118,4 +123,33 @@ code {
 }
 #Community li {
     margin-bottom: 8px;
+}
+
+@media (max-width: 900px){
+    #navbar header {
+        width: calc(100vw - 32px);
+        justify-content: space-between;
+    }
+    #navbar ul {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        margin: 3px;
+        background-color: #FFFFFF;
+    }
+    #main-doc {
+        margin: 92px 0 0 0;
+    }
+    .code_box {
+        width: calc(100vw - 148px);
+    }
 }
