@@ -54,7 +54,7 @@ body {
 #navbar ul {
     margin: 0;
     padding: 0;
-    height: calc(100vh - 108px);
+    height: calc(100vh - 92px);
     list-style: none;
     overflow-y: auto;
     overflow-x: hidden;
@@ -114,12 +114,13 @@ code {
 .code_box {
     display: block;
     padding: 32px;
+    padding-right: 0;
     background-color: #EEEEEE;
     overflow-x: auto;
     border-radius: 8px;
     margin: 0 0 32px;
     line-height: 1.5;
-    width: calc(100vw - 448px);
+    width: calc(100vw - 429px);
 }
 #Community li {
     margin-bottom: 8px;
