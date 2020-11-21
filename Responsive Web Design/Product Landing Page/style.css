@@ -84,7 +84,7 @@ body {
     align-items: center;
 
     width: 100%;
-    padding: 80px 0;
+    padding: 110px 0 50px;
 
     background-image: repeating-linear-gradient(
         -15deg,
@@ -414,7 +414,11 @@ body {
 }
 #footer hr {
     width: 100%;
-    margin: 0px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #333333;
 }
 .dev_container {
     display: flex;
@@ -426,10 +430,32 @@ body {
 }
 
 @media (max-width: 950px) {
-    .menuMobile {
+    .menu_mobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    #nav-bar ul {
+        display: none;
+        position: absolute;
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        background-color: #0A0A23;
+    }
+    #nav-bar li {
+        width: 100%;
+    }
+    .nav-link {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 8px 0;
+        border-top: 1px solid #333333;
     }
 
     .banner_container {
@@ -446,14 +472,11 @@ body {
         grid-template-columns: 3fr 3fr;
         grid-template-areas:
             'ftr1 ftr2'
-            'ftr3 ftr4'
-            'img img';
+            'ftr3 ftr4';
         grid-row-gap: 64px;
     }
     #features_img {
-        max-width: 400px;
-        align-self: center;
-        justify-self: center;
+        display: none;
     }
     .feature_widget {
         max-width: 300px;
@@ -480,14 +503,15 @@ body {
     .join_us_container {
         grid-template-columns: 1fr;
         grid-template-areas:
-            'form'
-            'img';
+            'form';
         max-width: 600px;
         grid-row-gap: 80px;
     }
     #join_us_img {
-        max-width: 500px;
-        justify-self: center;
+        display: none;
+    }
+    #form {
+        align-items: center;
     }
     #join_us .button {
         margin: 0;
@@ -507,6 +531,50 @@ body {
     #join_us,
     #pricing {
         padding: 0 0 120px;
+    }
+}
+
+@media (max-width: 650px) {
+    #banner {
+        background-image: none;
+        background-color: #0A0A23;
+    }
+    .banner_container {
+        grid-template-columns: 1fr;
+    }
+    #banner_img {
+        display: none;
+        padding-bottom: 40px;
+    }
+
+    .features_container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'ftr1' 'ftr2' 'ftr3' 'ftr4 ';
+        padding-top: 40px;
+    }
+    
+    #video {
+        height: 200px;
+        max-width: 400px;
+    }
+    #youtube h2,
+    #join_us h2,
+    .price_title,
+    .price {
+        font-size: 32px;
+    }
+    .price_description {
+        font-size: 16px;
+    }
+    .pricing_container {
+        grid-row-gap: 32px;
+    }
+
+    #footer ul {
+        flex-direction: column;
+    }
+    #footer li {
+        margin: 5px;
     }
 }
 
