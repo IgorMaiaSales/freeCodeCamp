@@ -276,3 +276,46 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+
+#footer {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    background-color: var(--main-green);
+    color: #FFFFFF;
+}
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 24px 0;
+}
+#footer_widget {
+    display: flex;
+    flex-direction: column;
+}
+#footer_widget .title {
+    margin-bottom: 16px;
+    color: var(--gray1);
+}
+.footer_contact {
+    display: flex;
+    align-items: center;
+}
+.footer_contact .paragraph {
+    margin-left: 8px;
+}
+.footer_icon {
+    width: 40px;
+}
+.email {
+    margin-bottom: 8px;
+}
+#social_media {
+    display: flex;
+}
+#social_media .footer_contact {
+    margin-left: 40px;
+}
